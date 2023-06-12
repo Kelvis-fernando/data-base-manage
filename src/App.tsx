@@ -1,9 +1,11 @@
+import { Flex, Heading } from "@chakra-ui/react";
+
 const App = () => {
   return (
-    <>
-      <h1>Hello app</h1>
-    </>
-  )
-}
+    <Flex flexDirection="column" alignItems="center" h="100vh">
+      <Heading>App data base</Heading>
+    </Flex>
+  );
+};
 
-export default App
+export default App;
