@@ -1,9 +1,12 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import Tabs from "./components/Tabs";
+import Prompt from "./components/Prompt";
 
 const App = () => {
   return (
-    <Flex flexDirection="column" alignItems="center" h="100vh">
-      <Heading>App data base</Heading>
+    <Flex justifyContent="center" alignItems="center" h="90vh" pt="50">
+      <Tabs />
+      <Prompt />
     </Flex>
   );
 };
