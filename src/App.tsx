@@ -4,7 +4,7 @@ import Console from "./pages/Console";
 
 const App = () => {
   return (
-    <Flex justifyContent="center" alignItems="center" h="90vh" pt="50">
+    <Flex justifyContent="center" alignItems="center" h="100vh">
       <Sidebar />
       <Console />
     </Flex>

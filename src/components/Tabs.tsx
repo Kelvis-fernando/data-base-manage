@@ -15,7 +15,7 @@ const Tabs = () => {
           justifyContent="center"
           bg="gray.200"
         >
-          <Text fontWeight="bold">Tab 1</Text>
+          <Text fontWeight="bold">Query to select all my users</Text>
           <X size={20} color="red" fontWeight="bold" />
         </Flex>
       </Flex>
@@ -28,7 +28,7 @@ const Tabs = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Text fontWeight="bold">Tab 1</Text>
+          <Text fontWeight="bold">Query to my postgreSQL DB</Text>
           <X size={20} color="red" fontWeight="bold" />
         </Flex>
       </Flex>
@@ -41,7 +41,7 @@ const Tabs = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Text fontWeight="bold">Tab 1</Text>
+          <Text fontWeight="bold">Join into dashboard table</Text>
           <X size={20} color="red" fontWeight="bold" />
         </Flex>
       </Flex>
