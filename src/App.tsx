@@ -1,12 +1,12 @@
 import { Flex } from "@chakra-ui/react";
-import Tabs from "./components/Tabs";
-import Prompt from "./components/Prompt";
+import Sidebar from "./components/Sidebar";
+import Console from "./pages/Console";
 
 const App = () => {
   return (
     <Flex justifyContent="center" alignItems="center" h="90vh" pt="50">
-      <Tabs />
-      <Prompt />
+      <Sidebar />
+      <Console />
     </Flex>
   );
 };
