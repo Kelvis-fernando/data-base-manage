@@ -3,9 +3,9 @@ import { X } from "@phosphor-icons/react";
 
 const Tabs = () => {
   return (
-    <Box border="1px solid black" p="1" w="20%" h="90vh">
+    <Box border="1px solid black" p="1" w="20%" h="90vh" borderRadius="3">
       <Heading>TABS</Heading>
-      <Flex flexDirection="column" borderRadius="3" p="1">
+      <Flex flexDirection="column" p="1">
         <Flex
           fontSize="xl"
           borderBottom="1px solid gray"
