@@ -22,10 +22,10 @@ const Sidebar = () => {
         <ListMagnifyingGlass size={32} color="orange" />
       </Box>
       <Box mt="100%">
-        <Link>
+        <Link href="/">
           <Table size={32} color="white" />
         </Link>
-        <Link>
+        <Link href="/console">
           <TerminalWindow size={32} color="white" />
         </Link>
       </Box>
