@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import useConnectForm from "../hooks/useConnectForm";
-import { getFormData } from "../utils/GetFormData";
+import { getFormData } from "../utils/getFormData";
 
 const ConnectForm = () => {
   const { formForDataBaseConnection, setDatabase, database } = useConnectForm();
