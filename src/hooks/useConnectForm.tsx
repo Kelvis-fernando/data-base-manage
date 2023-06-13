@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FirebaseForm from "../pages/Forms/FirebaseForm";
-import { Text } from "@chakra-ui/react";
+import SqlForm from "../pages/Forms/SqlForm";
 
 const useConnectForm = () => {
   const [database, setDatabase] = useState<string>();
@@ -10,17 +10,9 @@ const useConnectForm = () => {
       case "Firebase":
         return <FirebaseForm />;
       case "PostgreSQL":
-        return (
-          <Text textAlign="center" fontWeight="bold" fontSize="3xl">
-            Form em contrução!
-          </Text>
-        );
+        return <SqlForm />;
       case "MySQL":
-        return (
-          <Text textAlign="center" fontWeight="bold" fontSize="3xl">
-            Form em contrução!
-          </Text>
-        );
+        return <SqlForm />;
     }
   };
   return { formForDataBaseConnection, setDatabase, database };
