@@ -18,7 +18,7 @@ const ConnectForm = () => {
     <Box border="1px solid black" p="1" w="80%" h="90vh" borderRadius="3">
       <Heading>Connect your DB</Heading>
       <form onSubmit={getFormData}>
-        <FormControl mt="10">
+        <FormControl mt="10" isRequired>
           <Flex flexDir="column" alignItems="flex-start" ml="5">
             <FormLabel>Select your DB</FormLabel>
             <Select
@@ -40,13 +40,13 @@ const ConnectForm = () => {
           )}
           <Flex justifyContent="flex-end">
             <Button
-              bg="green.200"
-              _hover={{ bg: "green.100" }}
+              bg="orange"
+              _hover={{ bg: "orange.300" }}
               fontWeight="bold"
               m="5"
               type="submit"
             >
-              Conectar
+              Connect
             </Button>
           </Flex>
         </FormControl>
