@@ -4,6 +4,5 @@ export const getFormData = (event: FormEvent) => {
   event.preventDefault();
   const formData = new FormData(event.target as HTMLFormElement);
   const data = Object.fromEntries(formData);
-  console.log(data);
   return data;
 };
