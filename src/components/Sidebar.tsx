@@ -1,4 +1,13 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
 import {
   ListMagnifyingGlass,
   Table,
@@ -30,7 +39,15 @@ const Sidebar = () => {
         </Link>
       </Box>
       <Box position="fixed" bottom="10" cursor="pointer">
-        <UserCircle size={32} color="white" />
+        <Menu>
+          <MenuButton>
+            <UserCircle size={32} color="white" />
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Config</MenuItem>
+            <MenuItem>Logout</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
     </Flex>
   );
