@@ -6,7 +6,16 @@ import {
   FormLabel,
   Heading,
   Select,
+  Table,
+  TableCaption,
+  TableContainer,
+  Tbody,
+  Td,
   Text,
+  Tfoot,
+  Th,
+  Thead,
+  Tr,
 } from "@chakra-ui/react";
 import useConnectForm from "../hooks/useConnectForm";
 import { getFormData } from "../utils/getFormData";
@@ -51,6 +60,27 @@ const ConnectForm = () => {
           </Flex>
         </FormControl>
       </form>
+      <Box border="1px solid black" p="1" w="100%">
+        <Heading>Alredy connected</Heading>
+        <TableContainer>
+          <Table variant="simple">
+            <Thead>
+              <Tr>
+                <Th>DB Name</Th>
+                <Th>Date</Th>
+                <Th>Status</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              <Tr>
+                <Td>inches</Td>
+                <Td>millimetres (mm)</Td>
+                <Td>25.4</Td>
+              </Tr>
+            </Tbody>
+          </Table>
+        </TableContainer>
+      </Box>
     </Box>
   );
 };

@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Flex,
   Link,
   Menu,
